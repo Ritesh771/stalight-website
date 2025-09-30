@@ -51,10 +51,10 @@ const Footer: React.FC = () => {
             <div className="mb-8 flex justify-center">
               <a href="#home" className="flex items-center" onClick={(e) => handleLinkClick(e, '#home')}>
                             <span className="text-3xl lg:text-4xl font-bold font-inter text-gradient-primary">Stalight</span>
-            <span className="ml-2 text-2xl lg:text-3xl font-light font-inter text-white">Technology</span>
+            <span className="ml-2 text-2xl lg:text-3xl font-light font-inter text-foreground">Technology</span>
               </a>
             </div>
-            <p className="text-white/70 mb-8 text-center max-w-2xl">
+            <p className="text-muted-foreground mb-8 text-center max-w-2xl">
               Empowering educators and students with cutting-edge technology solutions for a brighter, more interconnected future of learning.
             </p>
             <div className="flex space-x-6 justify-center">
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
                   key={index}
                   href={social.href}
                   onClick={(e) => handleLinkClick(e, social.href)}
-                  className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-white/70 hover:text-stalight-primary transition-all duration-300 hover:scale-110 hover:shadow-[0_0_10px_rgba(155,135,245,0.4)] group"
+                  className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110 hover:shadow-[0_0_10px_rgba(155,135,245,0.4)] group"
                   aria-label={social.label}
                 >
                   <span className="transform transition-transform duration-300 group-hover:scale-110">
@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         
-        <div className="border-t border-white/10 pt-8 text-center text-white/50">
+        <div className="border-t border-border pt-8 text-center text-muted-foreground">
           <p>© {new Date().getFullYear()} <span className="text-gradient-stalight font-semibold">Stalight Technology</span>. All rights reserved.</p>
         </div>
       </div>

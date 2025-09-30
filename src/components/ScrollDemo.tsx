@@ -12,7 +12,7 @@ const ScrollDemo: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins text-gradient-primary">
             Experience Our Scroll Effects
           </h2>
-          <p className="text-xl text-white/80">
+          <p className="text-xl text-muted-foreground">
             Scroll down to see our advanced animations and interactive effects in action
           </p>
         </div>
@@ -23,26 +23,26 @@ const ScrollDemo: React.FC = () => {
         <div className="sticky-element flex items-center justify-center">
           <GlassmorphicCard className="max-w-4xl w-full mx-auto p-12 text-center">
             <div className="sticky-content active">
-              <h3 className="text-3xl font-bold text-white mb-6">Discover AI-Powered Education</h3>
-              <p className="text-xl text-white/80">
+              <h3 className="text-3xl font-bold text-foreground mb-6">Discover AI-Powered Education</h3>
+              <p className="text-xl text-muted-foreground">
                 Artificial intelligence is transforming how we teach and learn, making education more personalized and effective.
               </p>
             </div>
             <div className="sticky-content">
-              <h3 className="text-3xl font-bold text-white mb-6">Blockchain for Academic Records</h3>
-              <p className="text-xl text-white/80">
+              <h3 className="text-3xl font-bold text-foreground mb-6">Blockchain for Academic Records</h3>
+              <p className="text-xl text-muted-foreground">
                 Secure, tamper-proof academic records that can be instantly verified by employers and institutions worldwide.
               </p>
             </div>
             <div className="sticky-content">
-              <h3 className="text-3xl font-bold text-white mb-6">Virtual Reality Classrooms</h3>
-              <p className="text-xl text-white/80">
+              <h3 className="text-3xl font-bold text-foreground mb-6">Virtual Reality Classrooms</h3>
+              <p className="text-xl text-muted-foreground">
                 Immersive learning experiences that make complex concepts tangible and engaging for students of all ages.
               </p>
             </div>
             <div className="sticky-content">
-              <h3 className="text-3xl font-bold text-white mb-6">The Future is Here</h3>
-              <p className="text-xl text-white/80">
+              <h3 className="text-3xl font-bold text-foreground mb-6">The Future is Here</h3>
+              <p className="text-xl text-muted-foreground">
                 Join us at <span className="text-gradient-stalight font-semibold">Stalight Technology</span> to revolutionize education for the next generation of learners.
               </p>
             </div>
@@ -57,7 +57,7 @@ const ScrollDemo: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins text-gradient-primary">
               Parallax Depth Effect
             </h2>
-            <p className="text-xl text-white/80">
+            <p className="text-xl text-muted-foreground">
               Notice how elements move at different speeds as you scroll, creating a sense of depth and dimension.
             </p>
           </div>
@@ -82,7 +82,7 @@ const ScrollDemo: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins text-gradient-primary">
             Scroll-Triggered Transformations
           </h2>
-          <p className="text-xl text-white/80 mb-12">
+          <p className="text-xl text-muted-foreground mb-12">
             Watch these elements transform as you scroll through the page
           </p>
         </div>
@@ -90,22 +90,22 @@ const ScrollDemo: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           <div className="scroll-transform" data-transform="rotate" data-speed="0.2" data-max-value="360">
             <GlassmorphicCard className="h-64 flex items-center justify-center">
-              <p className="text-white font-bold">Rotation</p>
+              <p className="text-foreground font-bold">Rotation</p>
             </GlassmorphicCard>
           </div>
           <div className="scroll-transform" data-transform="scale" data-speed="0.1" data-max-value="20">
             <GlassmorphicCard className="h-64 flex items-center justify-center">
-              <p className="text-white font-bold">Scale</p>
+              <p className="text-foreground font-bold">Scale</p>
             </GlassmorphicCard>
           </div>
           <div className="scroll-transform" data-transform="skew" data-speed="0.05" data-max-value="30">
             <GlassmorphicCard className="h-64 flex items-center justify-center">
-              <p className="text-white font-bold">Skew</p>
+              <p className="text-foreground font-bold">Skew</p>
             </GlassmorphicCard>
           </div>
           <div className="scroll-transform" data-transform="move" data-speed="0.3" data-max-value="100">
             <GlassmorphicCard className="h-64 flex items-center justify-center">
-              <p className="text-white font-bold">Movement</p>
+              <p className="text-foreground font-bold">Movement</p>
             </GlassmorphicCard>
           </div>
         </div>

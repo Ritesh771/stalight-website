@@ -14,20 +14,20 @@ const About: React.FC = () => {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 lg:mb-4 font-bungee">
               About <span className="text-gradient-stalight">Stalight Technology</span>
             </h2>
-            <p className="text-lg sm:text-xl text-white/80 mb-4 lg:mb-6 max-w-3xl mx-auto px-4 font-inter">
+            <p className="text-lg sm:text-xl text-foreground/80 mb-4 lg:mb-6 max-w-3xl mx-auto px-4 font-inter">
               <span className="text-gradient-stalight font-semibold">Stalight Technology</span> is an AI-first Indian startup focused on building scalable, intelligent, and secure systems across education, public safety , and developer automation.
             </p>
-            <div className="bg-white/5 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-white/10 inline-block mx-4">
-              <p className="text-sm sm:text-base text-white/70 mb-2 font-inter">Reg No: UDYAM-KR-03-0515698</p>
-              <p className="text-sm sm:text-base text-white/70 font-inter">Founded in Bengaluru by a passionate engineering team.</p>
+            <div className="bg-card/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-border inline-block mx-4">
+              <p className="text-sm sm:text-base text-muted-foreground mb-2 font-inter">Reg No: UDYAM-KR-03-0515698</p>
+              <p className="text-sm sm:text-base text-muted-foreground font-inter">Founded in Bengaluru by a passionate engineering team.</p>
             </div>
           </div>
 
           {/* Main About Content with Illustration */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-8 lg:mb-12">
             <div className="px-4 lg:px-0">
-              <h3 className="text-xl sm:text-2xl font-semibold mb-4 lg:mb-6 text-white/90">Our Mission</h3>
-              <p className="text-white/70 mb-4 lg:mb-6 leading-relaxed text-sm sm:text-base">
+              <h3 className="text-xl sm:text-2xl font-semibold mb-4 lg:mb-6 text-foreground/90">Our Mission</h3>
+              <p className="text-muted-foreground mb-4 lg:mb-6 leading-relaxed text-sm sm:text-base">
                 We envision a future where AI seamlessly integrates into everyday operations, making organizations more efficient, secure, and innovative. Our solutions are designed to solve real-world problems with cutting-edge technology.
               </p>
               <div className="space-y-3 lg:space-y-4">
@@ -35,19 +35,19 @@ const About: React.FC = () => {
                   <div className="w-6 h-6 sm:w-8 sm:h-8 bg-primary/20 rounded-full flex items-center justify-center">
                     <Target className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
                   </div>
-                  <span className="text-white/80 text-sm sm:text-base">Practical AI solutions for real-world challenges</span>
+                  <span className="text-foreground/80 text-sm sm:text-base">Practical AI solutions for real-world challenges</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-6 h-6 sm:w-8 sm:h-8 bg-accent/20 rounded-full flex items-center justify-center">
                     <Users className="w-3 h-3 sm:w-4 sm:h-4 text-accent" />
                   </div>
-                  <span className="text-white/80 text-sm sm:text-base">Human-centered design approach</span>
+                  <span className="text-foreground/80 text-sm sm:text-base">Human-centered design approach</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-6 h-6 sm:w-8 sm:h-8 bg-purple-500/20 rounded-full flex items-center justify-center">
                     <Lightbulb className="w-3 h-3 sm:w-4 sm:h-4 text-purple-400" />
                   </div>
-                  <span className="text-white/80 text-sm sm:text-base">Continuous innovation and improvement</span>
+                  <span className="text-foreground/80 text-sm sm:text-base">Continuous innovation and improvement</span>
                 </div>
               </div>
             </div>
@@ -68,7 +68,7 @@ const About: React.FC = () => {
                 <Brain className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
               </div>
               <h3 className="text-lg sm:text-xl font-semibold mb-2">AI-Driven Innovation</h3>
-              <p className="text-white/70 text-sm sm:text-base">Advanced artificial intelligence and automation for transformative impact across industries</p>
+              <p className="text-muted-foreground text-sm sm:text-base">Advanced artificial intelligence and automation for transformative impact across industries</p>
             </div>
 
             <div className="glass-card p-4 sm:p-6 rounded-xl text-center group hover:scale-105 transition-all duration-300">
@@ -76,7 +76,7 @@ const About: React.FC = () => {
                 <Shield className="w-6 h-6 sm:w-8 sm:h-8 text-accent" />
               </div>
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Practical Impact</h3>
-              <p className="text-white/70 text-sm sm:text-base">Solutions engineered to address real-world needs and deliver measurable results</p>
+              <p className="text-muted-foreground text-sm sm:text-base">Solutions engineered to address real-world needs and deliver measurable results</p>
             </div>
 
             <div className="glass-card p-4 sm:p-6 rounded-xl text-center group hover:scale-105 transition-all duration-300 sm:col-span-2 lg:col-span-1">
@@ -84,7 +84,7 @@ const About: React.FC = () => {
                 <Zap className="w-6 h-6 sm:w-8 sm:h-8 text-purple-400" />
               </div>
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Secure & Scalable by Design</h3>
-              <p className="text-white/70 text-sm sm:text-base">Robust, future-ready platforms built for security, compliance, and growth</p>
+              <p className="text-muted-foreground text-sm sm:text-base">Robust, future-ready platforms built for security, compliance, and growth</p>
             </div>
           </div>
         </div>

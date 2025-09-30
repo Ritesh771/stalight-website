@@ -43,7 +43,7 @@ const WhyChooseUs: React.FC = () => {
             <h2 className="text-4xl font-bold mb-6 font-bungee">
               Why Choose <span className="text-gradient-stalight">Stalight Technology</span>?
             </h2>
-            <p className="text-xl text-white/80">
+            <p className="text-xl text-foreground/80">
               Experience the difference with our innovative solutions
             </p>
           </div>
@@ -55,7 +55,7 @@ const WhyChooseUs: React.FC = () => {
                   {reason.icon}
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{reason.title}</h3>
-                <p className="text-white/70">{reason.description}</p>
+                <p className="text-muted-foreground">{reason.description}</p>
               </div>
             ))}
           </div>

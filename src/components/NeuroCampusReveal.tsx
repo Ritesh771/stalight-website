@@ -131,7 +131,7 @@ const NeuroCampusReveal: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins text-gradient-primary">
             Introducing NEURO CAMPUS
           </h2>
-          <p className="text-xl text-white/80">
+          <p className="text-xl text-muted-foreground">
             The future of education technology, powered by AI and blockchain
           </p>
         </div>
@@ -149,7 +149,7 @@ const NeuroCampusReveal: React.FC = () => {
                       <h3 className="text-2xl font-bold mb-4 text-gradient-primary">
                         {feature.title}
                       </h3>
-                      <p className="text-lg text-white/80">
+                      <p className="text-lg text-muted-foreground">
                         {feature.description}
                       </p>
                       <div className="mt-6">

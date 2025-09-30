@@ -15,7 +15,7 @@ const Products: React.FC = () => {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 lg:mb-4 font-bungee bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-500 to-accent">
               Our Products
             </h2>
-            <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto px-4 font-inter">
+            <p className="text-lg sm:text-xl text-foreground/80 max-w-2xl mx-auto px-4 font-inter">
               Innovative solutions designed to transform education, safety, and development workflows
             </p>
           </div>
@@ -28,7 +28,7 @@ const Products: React.FC = () => {
                   <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gradient-primary">NEURO CAMPUS™</h3>
                   <span className="px-2 sm:px-3 py-1 text-xs sm:text-sm bg-primary/20 text-primary rounded-full self-start">Flagship Product</span>
                 </div>
-                <p className="text-white/80 mb-4 lg:mb-6 text-sm sm:text-base">
+                <p className="text-foreground/80 mb-4 lg:mb-6 text-sm sm:text-base">
                   A next-generation academic platform designed to streamline campus operations while integrating cutting-edge AI, blockchain, and automation features.
                 </p>
                 
@@ -38,28 +38,28 @@ const Products: React.FC = () => {
                       <Bot className="w-5 h-5 text-primary" />
                       <h4 className="font-semibold">NEURA Chatbot</h4>
                     </div>
-                    <p className="text-sm text-white/70">AI assistant for instant PDF summaries and Q&A using LLMs</p>
+                    <p className="text-sm text-foreground/70">AI assistant for instant PDF summaries and Q&A using LLMs</p>
                   </div>
                   <div className="glass-card p-4 rounded-lg hover:scale-105 transition-transform">
                     <div className="flex items-center gap-2 mb-2">
                       <Brain className="w-5 h-5 text-primary" />
                       <h4 className="font-semibold">NebulaSuggests AI</h4>
                     </div>
-                    <p className="text-sm text-white/70">Smart recommendation engine for personalized DSA problems</p>
+                    <p className="text-sm text-foreground/70">Smart recommendation engine for personalized DSA problems</p>
                   </div>
                   <div className="glass-card p-4 rounded-lg hover:scale-105 transition-transform">
                     <div className="flex items-center gap-2 mb-2">
                       <BookOpen className="w-5 h-5 text-primary" />
                       <h4 className="font-semibold">AI Rank Prediction</h4>
                     </div>
-                    <p className="text-sm text-white/70">Predicts student rankings and flags performance issues</p>
+                    <p className="text-sm text-foreground/70">Predicts student rankings and flags performance issues</p>
                   </div>
                   <div className="glass-card p-4 rounded-lg hover:scale-105 transition-transform">
                     <div className="flex items-center gap-2 mb-2">
                       <Shield className="w-5 h-5 text-primary" />
                       <h4 className="font-semibold">Blockchain Validation</h4>
                     </div>
-                    <p className="text-sm text-white/70">Tamper-proof, verifiable academic certificates</p>
+                    <p className="text-sm text-foreground/70">Tamper-proof, verifiable academic certificates</p>
                   </div>
                 </div>
 
@@ -69,14 +69,14 @@ const Products: React.FC = () => {
                       <Users className="w-5 h-5 text-primary" />
                       <h4 className="font-semibold">Role-Based Dashboards</h4>
                     </div>
-                    <p className="text-sm text-white/70">Web + Native App dashboards for admin, faculty, and students</p>
+                    <p className="text-sm text-foreground/70">Web + Native App dashboards for admin, faculty, and students</p>
                   </div>
                   <div className="glass-card p-4 rounded-lg hover:scale-105 transition-transform">
                     <div className="flex items-center gap-2 mb-2">
                       <Camera className="w-5 h-5 text-primary" />
                       <h4 className="font-semibold">Face Recognition</h4>
                     </div>
-                    <p className="text-sm text-white/70">AI-based attendance with manual fallback</p>
+                    <p className="text-sm text-foreground/70">AI-based attendance with manual fallback</p>
                   </div>
                 </div>
 
@@ -141,7 +141,7 @@ const Products: React.FC = () => {
                   className="w-32 h-24 opacity-70"
                 />
               </div>
-              <p className="text-white/80 mb-4">
+              <p className="text-foreground/80 mb-4">
                 Advanced safety system for public spaces and campuses with real-time monitoring and emergency response.
               </p>
               <div className="space-y-4 mb-6">
@@ -151,11 +151,11 @@ const Products: React.FC = () => {
                     Emergency Response
                   </h4>
                   <ul className="space-y-2">
-                    <li className="flex items-center gap-2 text-sm text-white/70">
+                    <li className="flex items-center gap-2 text-sm text-muted-foreground">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                       One-tap emergency alerts
                     </li>
-                    <li className="flex items-center gap-2 text-sm text-white/70">
+                    <li className="flex items-center gap-2 text-sm text-muted-foreground">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                       Auto-connects to emergency services
                     </li>
@@ -167,11 +167,11 @@ const Products: React.FC = () => {
                     AI Surveillance
                   </h4>
                   <ul className="space-y-2">
-                    <li className="flex items-center gap-2 text-sm text-white/70">
+                    <li className="flex items-center gap-2 text-sm text-muted-foreground">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                       AI-integrated CCTV monitoring
                     </li>
-                    <li className="flex items-center gap-2 text-sm text-white/70">
+                    <li className="flex items-center gap-2 text-sm text-muted-foreground">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                       Real-time police notifications
                     </li>
@@ -200,7 +200,7 @@ const Products: React.FC = () => {
                   className="w-32 h-24 opacity-70"
                 />
               </div>
-              <p className="text-white/80 mb-4">
+              <p className="text-foreground/80 mb-4">
                 AI-powered platform that automates GitHub issue resolution and streamlines CI/CD workflows.
               </p>
               <div className="space-y-4 mb-6">
@@ -210,11 +210,11 @@ const Products: React.FC = () => {
                     Smart Automation
                   </h4>
                   <ul className="space-y-2">
-                    <li className="flex items-center gap-2 text-sm text-white/70">
+                    <li className="flex items-center gap-2 text-sm text-muted-foreground">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                       Automated issue resolution
                     </li>
-                    <li className="flex items-center gap-2 text-sm text-white/70">
+                    <li className="flex items-center gap-2 text-sm text-muted-foreground">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                       Smart PR generation
                     </li>
@@ -226,11 +226,11 @@ const Products: React.FC = () => {
                     CI/CD Integration
                   </h4>
                   <ul className="space-y-2">
-                    <li className="flex items-center gap-2 text-sm text-white/70">
+                    <li className="flex items-center gap-2 text-sm text-muted-foreground">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                       Automated testing
                     </li>
-                    <li className="flex items-center gap-2 text-sm text-white/70">
+                    <li className="flex items-center gap-2 text-sm text-muted-foreground">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                       Smart deployment workflows
                     </li>
@@ -259,7 +259,7 @@ const Products: React.FC = () => {
                   className="w-32 h-24 opacity-70"
                 />
               </div>
-              <p className="text-white/80 mb-4">
+              <p className="text-foreground/80 mb-4">
                 Next-generation surveillance system using Computer Vision for enhanced campus security.
               </p>
               <div className="space-y-4 mb-6">
@@ -269,11 +269,11 @@ const Products: React.FC = () => {
                     Threat Detection
                   </h4>
                   <ul className="space-y-2">
-                    <li className="flex items-center gap-2 text-sm text-white/70">
+                    <li className="flex items-center gap-2 text-sm text-muted-foreground">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                       Ragging & bullying detection
                     </li>
-                    <li className="flex items-center gap-2 text-sm text-white/70">
+                    <li className="flex items-center gap-2 text-sm text-muted-foreground">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                       Unauthorized gathering alerts
                     </li>
@@ -285,11 +285,11 @@ const Products: React.FC = () => {
                     Real-time Response
                   </h4>
                   <ul className="space-y-2">
-                    <li className="flex items-center gap-2 text-sm text-white/70">
+                    <li className="flex items-center gap-2 text-sm text-muted-foreground">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                       Instant alert system
                     </li>
-                    <li className="flex items-center gap-2 text-sm text-white/70">
+                    <li className="flex items-center gap-2 text-sm text-muted-foreground">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                       Real-time evidence collection
                     </li>
@@ -318,7 +318,7 @@ const Products: React.FC = () => {
                     className="w-32 h-24 opacity-70"
                   />
                 </div>
-                <p className="text-white/80 mb-4">
+                <p className="text-foreground/80 mb-4">
                   Access and query your databases by chatting in plain English. Our software securely converts your requests to SQL, fetches data with proper authentication, and supports memory chat and multiple database connections.
                 </p>
                 <div className="space-y-4 mb-6">
@@ -328,11 +328,11 @@ const Products: React.FC = () => {
                       Natural Language to SQL
                     </h4>
                     <ul className="space-y-2">
-                      <li className="flex items-center gap-2 text-sm text-white/70">
+                      <li className="flex items-center gap-2 text-sm text-muted-foreground">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                         Chat with your database in normal English
                       </li>
-                      <li className="flex items-center gap-2 text-sm text-white/70">
+                      <li className="flex items-center gap-2 text-sm text-muted-foreground">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                         Automatic conversion to secure SQL queries
                       </li>
@@ -344,11 +344,11 @@ const Products: React.FC = () => {
                       Secure & Flexible
                     </h4>
                     <ul className="space-y-2">
-                      <li className="flex items-center gap-2 text-sm text-white/70">
+                      <li className="flex items-center gap-2 text-sm text-muted-foreground">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                         Safe data access with authentication
                       </li>
-                      <li className="flex items-center gap-2 text-sm text-white/70">
+                      <li className="flex items-center gap-2 text-sm text-muted-foreground">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                         Supports memory chat and multiple database connections
                       </li>
@@ -377,7 +377,7 @@ const Products: React.FC = () => {
                   className="w-32 h-24 opacity-70"
                 />
               </div>
-              <p className="text-white/80 mb-4">
+              <p className="text-foreground/80 mb-4">
                 An augmented reality platform for field technicians to receive real-time, hands-free guidance from remote experts while repairing or maintaining industrial equipment. AR overlays, live video, and IoT integration create a fully immersive, data-driven support experience.
               </p>
               <div className="space-y-4 mb-6">
@@ -387,7 +387,7 @@ const Products: React.FC = () => {
                     AR Overlays
                   </h4>
                   <ul className="space-y-2">
-                    <li className="flex items-center gap-2 text-sm text-white/70">
+                    <li className="flex items-center gap-2 text-sm text-muted-foreground">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                       Step-by-step visual instructions and 3D models of equipment
                     </li>
@@ -399,11 +399,11 @@ const Products: React.FC = () => {
                     Remote Collaboration
                   </h4>
                   <ul className="space-y-2">
-                    <li className="flex items-center gap-2 text-sm text-white/70">
+                    <li className="flex items-center gap-2 text-sm text-muted-foreground">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                       Live video and audio support from experts
                     </li>
-                    <li className="flex items-center gap-2 text-sm text-white/70">
+                    <li className="flex items-center gap-2 text-sm text-muted-foreground">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                       Experts can draw annotations in technician’s field of view
                     </li>
@@ -415,11 +415,11 @@ const Products: React.FC = () => {
                     IoT Integration
                   </h4>
                   <ul className="space-y-2">
-                    <li className="flex items-center gap-2 text-sm text-white/70">
+                    <li className="flex items-center gap-2 text-sm text-muted-foreground">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                       Connects to equipment sensors for real-time diagnostics
                     </li>
-                    <li className="flex items-center gap-2 text-sm text-white/70">
+                    <li className="flex items-center gap-2 text-sm text-muted-foreground">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                       Predictive maintenance alerts
                     </li>
@@ -450,7 +450,7 @@ const Products: React.FC = () => {
                     className="w-32 h-24 opacity-70"
                   />
                 </div>
-                <p className="text-white/80 mb-4">
+                <p className="text-foreground/80 mb-4">
                   Get affordable, accessible legal advice for common issues like rent agreements and traffic fines. The AI Lawyer chatbot drafts and reviews contracts, predicts legal outcomes, and connects you to human lawyers for complex cases.
                 </p>
                 <div className="space-y-4 mb-6">
@@ -460,7 +460,7 @@ const Products: React.FC = () => {
                       Contract Drafting & Review
                     </h4>
                     <ul className="space-y-2">
-                      <li className="flex items-center gap-2 text-sm text-white/70">
+                      <li className="flex items-center gap-2 text-sm text-muted-foreground">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                         Drafts and reviews rental agreements and other contracts in plain language
                       </li>
@@ -472,7 +472,7 @@ const Products: React.FC = () => {
                       Legal Outcome Prediction
                     </h4>
                     <ul className="space-y-2">
-                      <li className="flex items-center gap-2 text-sm text-white/70">
+                      <li className="flex items-center gap-2 text-sm text-muted-foreground">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                         Predicts likely outcomes (e.g., notice periods, fines)
                       </li>
@@ -484,7 +484,7 @@ const Products: React.FC = () => {
                       Human Lawyer Connection
                     </h4>
                     <ul className="space-y-2">
-                      <li className="flex items-center gap-2 text-sm text-white/70">
+                      <li className="flex items-center gap-2 text-sm text-muted-foreground">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                         Connects to affordable lawyers for complex cases
                       </li>

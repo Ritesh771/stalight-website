@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 const navItems = [
   { name: 'Home', href: '#home' },
@@ -58,7 +59,7 @@ const Navbar: React.FC = () => {
           onClick={(e) => handleNavClick(e, '#home')}
         >
           <span className="text-2xl font-bold font-inter text-gradient-stalight">Stalight</span>
-          <span className="ml-1 text-xl font-light font-inter text-white/90">Technology</span>
+          <span className="ml-1 text-xl font-light font-inter text-foreground/90">Technology</span>
         </a>
 
         {/* Desktop Navigation */}
@@ -67,7 +68,7 @@ const Navbar: React.FC = () => {
             <li key={item.name}>
               <a 
                 href={item.href}
-                className="text-white/80 hover:text-[#9b87f5] transition-colors duration-300 relative after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-[#9b87f5] hover:after:w-full after:transition-all after:duration-300"
+                className="text-foreground/80 hover:text-primary transition-colors duration-300 relative after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-primary hover:after:w-full after:transition-all after:duration-300"
                 onClick={(e) => handleNavClick(e, item.href)}
               >
                 {item.name}
@@ -76,15 +77,23 @@ const Navbar: React.FC = () => {
           ))}
         </ul>
 
+        {/* Desktop Actions */}
+        <div className="hidden md:flex items-center space-x-4">
+          <ThemeToggle />
+        </div>
+
         {/* Mobile Menu Toggle */}
-        <Button
-          variant="ghost"
-          size="icon"
-          className="md:hidden text-white"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        >
-          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </Button>
+        <div className="md:hidden flex items-center space-x-2">
+          <ThemeToggle />
+          <Button
+            variant="ghost"
+            size="icon"
+            className="text-foreground"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </Button>
+        </div>
       </div>
 
       {/* Mobile Navigation */}
@@ -95,7 +104,7 @@ const Navbar: React.FC = () => {
               <li key={item.name}>
                 <a 
                   href={item.href}
-                  className="block py-2 text-white/80 hover:text-[#9b87f5] transition-colors duration-300"
+                  className="block py-2 text-foreground/80 hover:text-primary transition-colors duration-300"
                   onClick={(e) => handleNavClick(e, item.href)}
                 >
                   {item.name}
