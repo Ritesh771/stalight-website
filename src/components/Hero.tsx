@@ -72,7 +72,7 @@ const Hero = () => {
 
           {/* Illustration - Improved responsive sizing and centering */}
           <div className="relative flex items-center justify-center order-1 lg:order-2 mb-8 lg:mb-0 py-8 lg:py-12 xl:py-16">
-            <div className="relative w-full max-w-[220px] sm:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl 3xl:max-w-3xl">
+            <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl">
               <video 
                 src="/video/Futuristic_Campus_Attendance_Video_Generation.mp4"
                 title="Futuristic Campus Attendance Technology"
