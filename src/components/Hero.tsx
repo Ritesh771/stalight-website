@@ -42,12 +42,12 @@ const Hero = () => {
                 Igniting Intelligence
               </span>
               <br />
-              <span className="text-white/90">through Innovation</span>
+              <span className="text-foreground/90">through Innovation</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-primary font-semibold mb-3 sm:mb-4 lg:mb-6 xl:mb-8 hero-text font-inter">
               Empowering the Future with Trusted AI Solutions
             </p>
-            <p className="text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl text-white/80 mb-6 sm:mb-8 lg:mb-10 xl:mb-12 max-w-2xl lg:max-w-3xl xl:max-w-4xl hero-description leading-relaxed font-inter">
+            <p className="text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl text-foreground/80 mb-6 sm:mb-8 lg:mb-10 xl:mb-12 max-w-2xl lg:max-w-3xl xl:max-w-4xl hero-description leading-relaxed font-inter">
               We build intelligent systems for campuses, safety, and automation that transform how organizations operate.
             </p>
             
@@ -63,7 +63,7 @@ const Hero = () => {
               <GlassmorphicButton
                 variant="outline"
                 onClick={() => scrollToSection('contact')}
-                className="hover:bg-white/10 text-white font-medium py-3 sm:py-4 lg:py-5 xl:py-6 px-6 sm:px-8 lg:px-10 xl:px-12 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_15px_rgba(255,255,255,0.3)] relative z-10 border-white/20 text-sm sm:text-base lg:text-lg xl:text-xl font-inter"
+                className="hover:bg-white/10 text-foreground font-medium py-3 sm:py-4 lg:py-5 xl:py-6 px-6 sm:px-8 lg:px-10 xl:px-12 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_15px_rgba(255,255,255,0.3)] relative z-10 border-white/20 text-sm sm:text-base lg:text-lg xl:text-xl font-inter"
               >
                 Contact Us
               </GlassmorphicButton>
@@ -73,12 +73,15 @@ const Hero = () => {
           {/* Illustration - Improved responsive sizing and centering */}
           <div className="relative flex items-center justify-center order-1 lg:order-2 mb-8 lg:mb-0 py-8 lg:py-12 xl:py-16">
             <div className="relative w-full max-w-[220px] sm:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl 3xl:max-w-3xl">
-              <img 
-                src="/svg/undraw_visionary-technology_f6b3.svg"
-                alt="Visionary Technology"
+              <video 
+                src="/video/Futuristic_Campus_Attendance_Video_Generation.mp4"
+                title="Futuristic Campus Attendance Technology"
                 className="w-full h-auto opacity-90 hover:opacity-100 transition-opacity duration-300"
-                loading="lazy"
-                decoding="async"
+                muted
+                autoPlay
+                loop
+                playsInline
+                preload="auto"
               />
               <div className="absolute -top-2 sm:-top-4 lg:-top-6 xl:-top-8 -right-2 sm:-right-4 lg:-right-6 xl:-right-8 w-6 h-6 sm:w-8 sm:h-8 lg:w-12 lg:h-12 xl:w-16 xl:h-16 bg-primary/20 rounded-full animate-pulse"></div>
               <div className="absolute -bottom-2 sm:-bottom-4 lg:-bottom-6 xl:-bottom-8 -left-2 sm:-left-4 lg:-left-6 xl:-left-8 w-4 h-4 sm:w-6 sm:h-6 lg:w-10 lg:h-10 xl:w-12 xl:h-12 bg-accent/20 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
@@ -91,7 +94,7 @@ const Hero = () => {
       <div className="absolute bottom-8 lg:bottom-12 xl:bottom-16 left-1/2 transform -translate-x-1/2">
         <Button
           variant="ghost"
-          className="text-white/60 hover:text-white rounded-full p-3 lg:p-4 hover:bg-white/5 transition-all duration-300 relative z-10"
+          className="text-foreground/60 hover:text-foreground rounded-full p-3 lg:p-4 hover:bg-white/5 transition-all duration-300 relative z-10"
           onClick={() => scrollToSection('about')}
         >
           <ChevronRight className="h-6 w-6 lg:h-8 lg:w-8" />

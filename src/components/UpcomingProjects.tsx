@@ -100,7 +100,7 @@ const UpcomingProjects: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins text-gradient-primary">
             Upcoming Projects
           </h2>
-          <p className="text-xl text-white/80">
+          <p className="text-xl text-foreground/80">
             Discover our cutting-edge innovations in educational technology currently in development
           </p>
         </div>
@@ -114,7 +114,7 @@ const UpcomingProjects: React.FC = () => {
           <Button 
             variant="ghost" 
             size="icon"
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-stalight-dark/50 hover:bg-stalight-primary/30 rounded-full text-white transition-all duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(155,135,245,0.5)]"
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-card/80 hover:bg-primary/30 rounded-full text-foreground transition-all duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(155,135,245,0.5)]"
             onClick={prevSlide}
           >
             <ChevronLeft className="h-8 w-8" />
@@ -123,7 +123,7 @@ const UpcomingProjects: React.FC = () => {
           <Button 
             variant="ghost" 
             size="icon"
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-stalight-dark/50 hover:bg-stalight-primary/30 rounded-full text-white transition-all duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(155,135,245,0.5)]"
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-card/80 hover:bg-primary/30 rounded-full text-foreground transition-all duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(155,135,245,0.5)]"
             onClick={nextSlide}
           >
             <ChevronRight className="h-8 w-8" />
@@ -152,10 +152,10 @@ const UpcomingProjects: React.FC = () => {
                       <div className="flex justify-center mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:text-stalight-light">
                         {project.icon}
                       </div>
-                      <h3 className="text-xl font-semibold mb-3 font-poppins text-white">
+                      <h3 className="text-xl font-semibold mb-3 font-poppins text-foreground">
                         {project.title}
                       </h3>
-                      <p className="text-white/70 transform transition-opacity duration-300 group-hover:text-white/90">
+                      <p className="text-muted-foreground transform transition-opacity duration-300 group-hover:text-foreground/90">
                         {project.description}
                       </p>
                       <div className="h-1 w-0 bg-gradient-to-r from-stalight-primary to-stalight-blue mt-4 mx-auto group-hover:w-20 transition-all duration-500"></div>

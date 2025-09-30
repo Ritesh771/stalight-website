@@ -59,7 +59,7 @@ const DashboardShowcase: React.FC = () => {
                       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 lg:mb-4 font-bungee text-gradient-primary">
             Our Application Showcase
           </h2>
-          <p className="text-lg sm:text-xl text-white/80 animate-fade-in backdrop-blur-sm p-4 rounded-lg bg-white/5 inline-block font-inter">
+          <p className="text-lg sm:text-xl text-foreground/80 animate-fade-in backdrop-blur-sm p-4 rounded-lg bg-card/80 inline-block font-inter">
             Explore our powerful dashboard solutions and interfaces
           </p>
         </div>
@@ -74,7 +74,7 @@ const DashboardShowcase: React.FC = () => {
                 spotlight={true}
                 className="transition-all duration-500 hover:scale-105 hover:shadow-lg hover:shadow-primary/20"
               >
-                <p className="text-white/70 text-sm">
+                <p className="text-muted-foreground text-sm">
                   Interactive dashboard interface with real-time data visualization.
                 </p>
               </CanvasRevealCard>

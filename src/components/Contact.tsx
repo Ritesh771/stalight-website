@@ -46,7 +46,7 @@ const Contact: React.FC = () => {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 lg:mb-4 font-bungee bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-500 to-accent">
               Get In Touch
             </h2>
-            <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto font-inter">
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto font-inter">
               Have questions or want to learn more about our services? We'd love to hear from you!
             </p>
           </div>
@@ -67,17 +67,17 @@ const Contact: React.FC = () => {
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
                   {info.icon}
                 </div>
-                <h4 className="font-semibold text-white mb-3 text-lg">{info.label}</h4>
+                <h4 className="font-semibold text-foreground mb-3 text-lg">{info.label}</h4>
                 {info.link ? (
                   <a 
                     href={info.link} 
-                    className="text-white/70 hover:text-primary transition-colors text-sm leading-relaxed block"
+                    className="text-muted-foreground hover:text-primary transition-colors text-sm leading-relaxed block"
                     {...(info.link.startsWith('http') ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                   >
                     {info.value}
                   </a>
                 ) : (
-                  <p className="text-white/70 text-sm whitespace-pre-line leading-relaxed">{info.value}</p>
+                  <p className="text-muted-foreground text-sm whitespace-pre-line leading-relaxed">{info.value}</p>
                 )}
               </div>
             ))}
@@ -89,7 +89,7 @@ const Contact: React.FC = () => {
               href="https://riteshn.me/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 glass-card px-6 py-3 rounded-full hover:scale-105 transition-all duration-300 text-white/80 hover:text-white group"
+              className="inline-flex items-center gap-2 glass-card px-6 py-3 rounded-full hover:scale-105 transition-all duration-300 text-muted-foreground hover:text-foreground group"
             >
               <span className="text-sm font-medium font-inter">Site Developed by</span>
               <span className="text-primary font-semibold font-inter">riteshn.me</span>

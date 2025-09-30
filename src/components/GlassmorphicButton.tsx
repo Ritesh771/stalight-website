@@ -21,9 +21,9 @@ const GlassmorphicButton: React.FC<GlassmorphicButtonProps> = ({
   const baseStyle = "transition-all duration-300 transform hover:scale-105 backdrop-blur-md";
   
   const variantStyles = {
-    default: "bg-stalight-primary hover:bg-stalight-primary text-white hover:shadow-[0_0_15px_rgba(155,135,245,0.5)]",
-    outline: "border border-white/20 hover:bg-white/10 text-white hover:shadow-[0_0_15px_rgba(255,255,255,0.3)]",
-    ghost: "text-white/80 hover:bg-white/5 hover:text-white",
+    default: "bg-stalight-primary hover:bg-stalight-primary text-foreground hover:shadow-[0_0_15px_rgba(155,135,245,0.5)]",
+    outline: "border border-border hover:bg-card/80 text-foreground hover:shadow-[0_0_15px_rgba(255,255,255,0.3)]",
+    ghost: "text-muted-foreground hover:bg-card/50 hover:text-foreground",
     link: "text-stalight-primary hover:text-stalight-primary/80 p-0 underline-offset-4 hover:underline"
   };
   

@@ -13,7 +13,7 @@ const DownloadApp = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 lg:mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-500 to-accent">
             Download NEURO CAMPUS™
           </h2>
-          <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto px-4">
+          <p className="text-base sm:text-lg text-foreground/80 max-w-2xl mx-auto px-4">
             Experience the future of campus management with our powerful mobile app. 
             Access all features on the go with enhanced security and real-time updates.
           </p>
@@ -50,34 +50,34 @@ const DownloadApp = () => {
           {/* Features and Download */}
           <div className="space-y-6 lg:space-y-8 px-4 lg:px-0 w-full">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="bg-white/5 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-white/10">
+              <div className="bg-card/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-border">
                 <Smartphone className="w-8 h-8 text-purple-400 mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Cross-Platform</h3>
-                <p className="text-gray-300">Available for both Android and iOS devices</p>
+                <p className="text-muted-foreground">Available for both Android and iOS devices</p>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
+              <div className="bg-card/80 backdrop-blur-sm p-6 rounded-xl border border-border">
                 <Download className="w-8 h-8 text-blue-400 mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Easy Setup</h3>
-                <p className="text-gray-300">Quick installation and seamless onboarding</p>
+                <p className="text-muted-foreground">Quick installation and seamless onboarding</p>
               </div>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10">
+            <div className="bg-card/80 backdrop-blur-sm p-8 rounded-xl border border-border">
               <h3 className="text-2xl font-semibold mb-4">Key Features</h3>
               <ul className="space-y-3">
-                <li className="flex items-center text-gray-300">
+                <li className="flex items-center text-muted-foreground">
                   <span className="w-2 h-2 bg-purple-400 rounded-full mr-3" />
                   Real-time notifications and updates
                 </li>
-                <li className="flex items-center text-gray-300">
+                <li className="flex items-center text-muted-foreground">
                   <span className="w-2 h-2 bg-purple-400 rounded-full mr-3" />
                   Secure authentication and data protection
                 </li>
-                <li className="flex items-center text-gray-300">
+                <li className="flex items-center text-muted-foreground">
                   <span className="w-2 h-2 bg-purple-400 rounded-full mr-3" />
                   Offline access to essential features
                 </li>
-                <li className="flex items-center text-gray-300">
+                <li className="flex items-center text-muted-foreground">
                   <span className="w-2 h-2 bg-purple-400 rounded-full mr-3" />
                   Seamless integration with web platform
                 </li>
