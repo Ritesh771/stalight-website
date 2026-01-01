@@ -22,7 +22,6 @@ const GlassmorphicCard: React.FC<GlassmorphicCardProps> = ({
       className={cn(
         "glass-card rounded-xl p-6",
         hoverEffect && "glass-card-hover",
-        glowEffect && "animate-pulse-glow",
         className
       )}
       onClick={onClick}

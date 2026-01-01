@@ -46,20 +46,17 @@ const DashboardShowcase: React.FC = () => {
   return (
     <section id="dashboard-showcase" className="py-12 sm:py-16 lg:py-20 relative overflow-hidden">
       {/* Section Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-black/80 to-background/70"></div>
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-950/10 via-transparent to-green-950/10"></div>
+      <div className="absolute inset-0 bg-[#030304]"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-950/10 via-transparent to-emerald-950/10"></div>
       
-      {/* Enhanced Aurora Background */}
-      <div className="absolute inset-0 z-0 opacity-30">
-        <div className="aurora-bg w-full h-full"></div>
-      </div>
+      {/* Simple background - removed aurora for better performance */}
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-10 lg:mb-12">
-                      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 lg:mb-4 font-bungee text-gradient-primary">
-            Our Application Showcase
+                      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 lg:mb-4 text-white">
+            Our Application <span className="title-gradient">Showcase</span>
           </h2>
-          <p className="text-lg sm:text-xl text-foreground/80 animate-fade-in backdrop-blur-sm p-4 rounded-lg bg-card/80 inline-block font-inter">
+          <p className="text-lg sm:text-xl text-slate-400 glass-panel p-4 rounded-lg inline-block">
             Explore our powerful dashboard solutions and interfaces
           </p>
         </div>
@@ -72,7 +69,7 @@ const DashboardShowcase: React.FC = () => {
                 imageSrc={image.src}
                 title={image.title}
                 spotlight={true}
-                className="transition-all duration-500 hover:scale-105 hover:shadow-lg hover:shadow-primary/20"
+                className="transition-all duration-500 hover:shadow-lg hover:shadow-primary/20"
               >
                 <p className="text-muted-foreground text-sm">
                   Interactive dashboard interface with real-time data visualization.

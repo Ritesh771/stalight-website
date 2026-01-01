@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
-import { ThemeToggle } from '@/components/ThemeToggle';
 
 const navItems = [
   { name: 'Home', href: '#home' },
@@ -48,8 +47,8 @@ const Navbar: React.FC = () => {
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled 
-          ? 'py-3 glass-card shadow-md' 
-          : 'py-6 bg-transparent'
+          ? 'py-3 backdrop-blur-md bg-[#030304]/80 border-b border-white/5' 
+          : 'py-6 backdrop-blur-md bg-[#030304]/60 border-b border-white/5'
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -58,8 +57,8 @@ const Navbar: React.FC = () => {
           className="flex items-center"
           onClick={(e) => handleNavClick(e, '#home')}
         >
-          <span className="text-2xl font-bold font-inter text-gradient-stalight">Stalight</span>
-          <span className="ml-1 text-xl font-light font-inter text-foreground/90">Technology</span>
+          <span className="text-2xl font-bold text-white">Stalight</span>
+          <span className="ml-1 text-xl font-light text-slate-300">Technology</span>
         </a>
 
         {/* Desktop Navigation */}
@@ -68,7 +67,7 @@ const Navbar: React.FC = () => {
             <li key={item.name}>
               <a 
                 href={item.href}
-                className="text-foreground/80 hover:text-primary transition-colors duration-300 relative after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-primary hover:after:w-full after:transition-all after:duration-300"
+                className="text-slate-300 hover:text-white transition-colors duration-300 relative after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-indigo-400 hover:after:w-full after:transition-all after:duration-300"
                 onClick={(e) => handleNavClick(e, item.href)}
               >
                 {item.name}
@@ -79,12 +78,10 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Actions */}
         <div className="hidden md:flex items-center space-x-4">
-          <ThemeToggle />
         </div>
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden flex items-center space-x-2">
-          <ThemeToggle />
           <Button
             variant="ghost"
             size="icon"
@@ -98,7 +95,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="md:hidden neo-blur absolute top-full left-0 w-full py-4 px-4">
+        <div className="md:hidden backdrop-blur-xl bg-background/20 border-t border-white/10 absolute top-full left-0 w-full py-4 px-4 shadow-lg">
           <ul className="space-y-4">
             {navItems.map((item) => (
               <li key={item.name}>

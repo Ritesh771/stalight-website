@@ -36,26 +36,26 @@ const WhyChooseUs: React.FC = () => {
   ];
 
   return (
-    <section id="why-choose-us" className="py-24 relative overflow-hidden bg-gradient-to-b from-background to-background/95">
+    <section id="why-choose-us" className="py-24 relative overflow-hidden bg-[#030304]">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 font-bungee">
+            <h2 className="text-4xl font-bold mb-6 font-bungee title-gradient">
               Why Choose <span className="text-gradient-stalight">Stalight Technology</span>?
             </h2>
-            <p className="text-xl text-foreground/80">
+            <p className="text-xl text-slate-400">
               Experience the difference with our innovative solutions
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {reasons.map((reason, index) => (
-              <div key={index} className="glass-card p-6 rounded-xl transform transition-all duration-300 hover:scale-105">
+              <div key={index} className="glass-panel p-6 rounded-xl transition-all duration-300 border border-white/10">
                 <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-4">
                   {reason.icon}
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{reason.title}</h3>
-                <p className="text-muted-foreground">{reason.description}</p>
+                <h3 className="text-xl font-semibold mb-2 text-white">{reason.title}</h3>
+                <p className="text-slate-400">{reason.description}</p>
               </div>
             ))}
           </div>

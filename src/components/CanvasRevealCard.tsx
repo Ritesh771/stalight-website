@@ -25,19 +25,29 @@ const CanvasRevealCard: React.FC<CanvasRevealCardProps> = ({
   const cardRef = useRef<HTMLDivElement>(null);
   
   useEffect(() => {
+    // Throttle intersection observer for better performance
+    let timeoutId: NodeJS.Timeout;
+    
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          setIsVisible(true);
+          // Delay setting visible to prevent rapid firing
+          timeoutId = setTimeout(() => {
+            setIsVisible(true);
+          }, 50);
         }
       });
-    }, { threshold: 0.1 });
+    }, { 
+      threshold: 0.1,
+      rootMargin: '50px' // Trigger earlier
+    });
     
     if (cardRef.current) {
       observer.observe(cardRef.current);
     }
     
     return () => {
+      clearTimeout(timeoutId);
       if (cardRef.current) {
         observer.unobserve(cardRef.current);
       }
@@ -90,7 +100,7 @@ const CanvasRevealCard: React.FC<CanvasRevealCardProps> = ({
           <img 
             src={imageSrc} 
             alt={title || "Dashboard preview"} 
-            className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
+            className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
             loading="lazy" // Add lazy loading for better performance
             decoding="async" // Async decoding for smoother loading
           />
