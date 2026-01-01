@@ -70,7 +70,7 @@ const Contact: React.FC = () => {
                     />
                   </div>
 
-                  <div className="text-sm text-primary font-semibold mb-2">CEO & Lead Developer</div>
+                  <div className="text-sm text-primary font-semibold mb-2">Lead Developer</div>
                   <div className="text-xl font-bold text-white mb-3">Ritesh N</div>
 
                   <p className="text-slate-400 text-sm mb-4 leading-relaxed">
@@ -102,7 +102,7 @@ const Contact: React.FC = () => {
                     />
                   </div>
 
-                  <div className="text-sm text-accent font-semibold mb-2">CTO & Co-Lead Developer</div>
+                  <div className="text-sm text-accent font-semibold mb-2">Co-Lead Developer</div>
                   <div className="text-xl font-bold text-white mb-3">Pannaga J</div>
 
                   <p className="text-slate-400 text-sm mb-4 leading-relaxed">
