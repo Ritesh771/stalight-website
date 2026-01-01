@@ -103,7 +103,7 @@ const Contact: React.FC = () => {
                   </div>
 
                   <div className="text-sm text-accent font-semibold mb-2">Co-Lead Developer</div>
-                  <div className="text-xl font-bold text-white mb-3">Pannaga J</div>
+                  <div className="text-xl font-bold text-white mb-3">Pannaga JA</div>
 
                   <p className="text-slate-400 text-sm mb-4 leading-relaxed">
                     Creative frontend specialist and UI/UX enthusiast. Expert in modern web technologies
