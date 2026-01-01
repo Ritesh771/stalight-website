@@ -93,14 +93,14 @@ const UpcomingProjects: React.FC = () => {
   }, [currentSlide, totalSlides, isHovered]);
 
   return (
-    <section id="projects" className="py-24 relative overflow-hidden">
+    <section id="projects" className="py-24 relative overflow-hidden bg-[#030304]">
       {/* Removed animated background accents for smoothness */}
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-reveal">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins text-gradient-primary">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins title-gradient">
             Upcoming Projects
           </h2>
-          <p className="text-xl text-foreground/80">
+          <p className="text-xl text-slate-400">
             Discover our cutting-edge innovations in educational technology currently in development
           </p>
         </div>
@@ -114,7 +114,7 @@ const UpcomingProjects: React.FC = () => {
           <Button 
             variant="ghost" 
             size="icon"
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-card/80 hover:bg-primary/30 rounded-full text-foreground transition-all duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(155,135,245,0.5)]"
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-card/80 hover:bg-primary/30 rounded-full text-foreground transition-all duration-300 hover:shadow-[0_0_15px_rgba(155,135,245,0.5)]"
             onClick={prevSlide}
           >
             <ChevronLeft className="h-8 w-8" />
@@ -123,7 +123,7 @@ const UpcomingProjects: React.FC = () => {
           <Button 
             variant="ghost" 
             size="icon"
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-card/80 hover:bg-primary/30 rounded-full text-foreground transition-all duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(155,135,245,0.5)]"
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-card/80 hover:bg-primary/30 rounded-full text-foreground transition-all duration-300 hover:shadow-[0_0_15px_rgba(155,135,245,0.5)]"
             onClick={nextSlide}
           >
             <ChevronRight className="h-8 w-8" />
@@ -147,9 +147,9 @@ const UpcomingProjects: React.FC = () => {
                   ).map((project, projectIndex) => (
                     <GlassmorphicCard 
                       key={projectIndex}
-                      className="flex-1 min-w-[250px] max-w-[300px] text-center transition-all duration-500 hover:scale-105 hover:shadow-[0_0_20px_rgba(155,135,245,0.3)] group"
+                      className="flex-1 min-w-[250px] max-w-[300px] text-center transition-all duration-500 hover:shadow-[0_0_20px_rgba(155,135,245,0.3)] group"
                     >
-                      <div className="flex justify-center mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:text-stalight-light">
+                      <div className="flex justify-center mb-4 transition-transform duration-300 group-hover:text-stalight-light">
                         {project.icon}
                       </div>
                       <h3 className="text-xl font-semibold mb-3 font-poppins text-foreground">

@@ -27,22 +27,22 @@ const Footer: React.FC = () => {
   return (
     <footer className="pt-8 sm:pt-12 lg:pt-16 pb-8 relative overflow-hidden">
       {/* Footer Background */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-background/95 to-background/85"></div>
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-950/10 via-transparent to-purple-950/10"></div>
+      <div className="absolute inset-0 bg-[#020203]"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-indigo-950/10 via-transparent to-purple-950/10"></div>
       {/* Wave background lines inspired by the reference image */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-10">
         <div className="wave-lines"></div>
       </div>
       
-      {/* Background accents with enhanced animation */}
-      <div className="absolute top-0 left-1/4 w-64 h-64 rounded-full bg-stalight-primary/5 blur-3xl animate-pulse-glow"></div>
-      <div className="absolute bottom-0 right-1/4 w-64 h-64 rounded-full bg-stalight-blue/5 blur-3xl animate-pulse-glow" style={{ animationDelay: '-2s' }}></div>
-      <div className="absolute top-1/3 right-1/3 w-48 h-48 rounded-full bg-stalight-accent/5 blur-3xl animate-pulse-glow" style={{ animationDelay: '-3s' }}></div>
+      {/* Background accents - removed animations for performance */}
+      <div className="absolute top-0 left-1/4 w-64 h-64 rounded-full bg-stalight-primary/5 blur-3xl"></div>
+      <div className="absolute bottom-0 right-1/4 w-64 h-64 rounded-full bg-stalight-blue/5 blur-3xl"></div>
+      <div className="absolute top-1/3 right-1/3 w-48 h-48 rounded-full bg-stalight-accent/5 blur-3xl"></div>
       
-      {/* 3D floating elements with enhanced animation */}
-      <div className="absolute top-1/4 right-1/4 w-12 h-12 glass-card rounded-xl animate-float-slow transform rotate-12" style={{ animationDelay: '-1s' }}></div>
-      <div className="absolute bottom-1/4 left-1/4 w-16 h-16 glass-card rounded-xl animate-float-reverse transform -rotate-12" style={{ animationDelay: '-3s' }}></div>
-      <div className="absolute top-2/3 right-1/3 w-10 h-10 glass-card rounded-lg animate-float transform-style-3d" style={{ animationDelay: '-2.5s' }}></div>
+      {/* Simple floating elements - removed animations for performance */}
+      <div className="absolute top-1/4 right-1/4 w-12 h-12 glass-card rounded-xl transform rotate-12"></div>
+      <div className="absolute bottom-1/4 left-1/4 w-16 h-16 glass-card rounded-xl transform -rotate-12"></div>
+      <div className="absolute top-2/3 right-1/3 w-10 h-10 glass-card rounded-lg transform-style-3d"></div>
       
       <div className="container mx-auto px-4">
         <div className="flex justify-center items-center mb-12">

@@ -17,22 +17,22 @@ const GrowvoAd = () => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-md">
-      {/* Animated Background Particles */}
+      {/* Simple background dots - removed animations for performance */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-ping opacity-60"></div>
-        <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-accent rounded-full animate-ping opacity-40" style={{ animationDelay: '0.5s' }}></div>
-        <div className="absolute top-1/2 left-1/6 w-1.5 h-1.5 bg-purple-400 rounded-full animate-ping opacity-50" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute bottom-1/4 right-1/6 w-1 h-1 bg-blue-400 rounded-full animate-ping opacity-30" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full opacity-60"></div>
+        <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-accent rounded-full opacity-40"></div>
+        <div className="absolute top-1/2 left-1/6 w-1.5 h-1.5 bg-purple-400 rounded-full opacity-50"></div>
+        <div className="absolute bottom-1/4 right-1/6 w-1 h-1 bg-blue-400 rounded-full opacity-30"></div>
       </div>
 
       <div className="relative max-w-lg w-full">
-        {/* Glowing Border Effect */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary via-purple-500 to-accent rounded-3xl blur-xl opacity-30 animate-pulse"></div>
+        {/* Simple border effect - removed animation */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary via-purple-500 to-accent rounded-3xl blur-xl opacity-30"></div>
 
         {/* Main Card */}
         <div className="relative bg-gradient-to-br from-slate-900/95 via-purple-900/90 to-slate-800/95 backdrop-blur-xl rounded-3xl border border-white/10 shadow-2xl overflow-hidden">
-          {/* Animated Top Border */}
-          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-purple-500 to-accent animate-pulse"></div>
+          {/* Simple top border - removed animation */}
+          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-purple-500 to-accent"></div>
 
           {/* Close Button */}
           <button
@@ -103,15 +103,15 @@ const GrowvoAd = () => {
               {/* Button Glow Effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
 
-              {/* Animated Background */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-10 animate-pulse"></div>
+              {/* Simple button background - removed animation */}
+              <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-10"></div>
 
               <span className="relative z-10 text-lg">Visit Growvo</span>
               <ExternalLink className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300 relative z-10" />
 
-              {/* Sparkle Effect */}
+              {/* Simple sparkle effect - removed animation */}
               <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                <Zap className="w-3 h-3 text-yellow-300 animate-ping" />
+                <Zap className="w-3 h-3 text-yellow-300" />
               </div>
             </a>
 

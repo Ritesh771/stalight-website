@@ -1,7 +1,7 @@
 import React from 'react';
 import ThreeBackground from '@/components/ThreeBackground';
 import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
+import Hero from '@/components/Hero-simple';
 import About from '@/components/About';
 import Products from '@/components/Products';
 import DashboardShowcase from '@/components/DashboardShowcase';
@@ -27,7 +27,7 @@ const Index: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-blue-950/20 via-purple-950/10 to-background/90" />
       </div>
 
-      <ThreeBackground />
+      {/* <ThreeBackground /> */}
       <Navbar />
 
       {/* Main Sections - Removed entrance animations */}

@@ -3,17 +3,17 @@ import { ArrowRight, Download, Smartphone, Sparkles, Star } from 'lucide-react';
 
 const DownloadApp = () => {
   return (
-        <section id="neuro-campus" className="relative py-12 sm:py-16 lg:py-20 overflow-hidden">
+        <section id="neuro-campus" className="relative py-12 sm:py-16 lg:py-20 overflow-hidden bg-[#030304]">
       {/* Section Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background/75 via-background/85 to-background/75"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-[#030304]/75 via-[#030304]/85 to-[#030304]/75"></div>
       <div className="absolute inset-0 bg-gradient-to-br from-purple-950/15 via-transparent to-blue-950/15" />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-8 lg:mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 lg:mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-500 to-accent">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 lg:mb-4 title-gradient">
             Download NEURO CAMPUS™
           </h2>
-          <p className="text-base sm:text-lg text-foreground/80 max-w-2xl mx-auto px-4">
+          <p className="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto px-4">
             Experience the future of campus management with our powerful mobile app. 
             Access all features on the go with enhanced security and real-time updates.
           </p>
@@ -25,7 +25,7 @@ const DownloadApp = () => {
                 alt="Mobile App"
                 className="w-full opacity-90 hover:opacity-100 transition-opacity duration-300"
               />
-              <div className="absolute top-2 sm:top-4 right-2 sm:right-4 w-8 h-8 sm:w-12 sm:h-12 bg-primary/20 rounded-full flex items-center justify-center animate-pulse">
+              <div className="absolute top-2 sm:top-4 right-2 sm:right-4 w-8 h-8 sm:w-12 sm:h-12 bg-primary/20 rounded-full flex items-center justify-center">
                 <Star className="w-4 h-4 sm:w-6 sm:h-6 text-primary" />
               </div>
             </div>
@@ -41,7 +41,7 @@ const DownloadApp = () => {
                 alt="Mobile App"
                 className="w-full opacity-90 hover:opacity-100 transition-opacity duration-300"
               />
-              <div className="absolute top-2 sm:top-4 right-2 sm:right-4 w-8 h-8 sm:w-12 sm:h-12 bg-primary/20 rounded-full flex items-center justify-center animate-pulse">
+              <div className="absolute top-2 sm:top-4 right-2 sm:right-4 w-8 h-8 sm:w-12 sm:h-12 bg-primary/20 rounded-full flex items-center justify-center">
                 <Star className="w-4 h-4 sm:w-6 sm:h-6 text-primary" />
               </div>
             </div>
@@ -50,34 +50,34 @@ const DownloadApp = () => {
           {/* Features and Download */}
           <div className="space-y-6 lg:space-y-8 px-4 lg:px-0 w-full">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="bg-card/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-border">
+              <div className="glass-panel p-4 sm:p-6 rounded-xl border border-white/10">
                 <Smartphone className="w-8 h-8 text-purple-400 mb-4" />
-                <h3 className="text-xl font-semibold mb-2">Cross-Platform</h3>
-                <p className="text-muted-foreground">Available for both Android and iOS devices</p>
+                <h3 className="text-xl font-semibold mb-2 text-white">Cross-Platform</h3>
+                <p className="text-slate-400">Available for both Android and iOS devices</p>
               </div>
-              <div className="bg-card/80 backdrop-blur-sm p-6 rounded-xl border border-border">
+              <div className="glass-panel p-6 rounded-xl border border-white/10">
                 <Download className="w-8 h-8 text-blue-400 mb-4" />
-                <h3 className="text-xl font-semibold mb-2">Easy Setup</h3>
-                <p className="text-muted-foreground">Quick installation and seamless onboarding</p>
+                <h3 className="text-xl font-semibold mb-2 text-white">Easy Setup</h3>
+                <p className="text-slate-400">Quick installation and seamless onboarding</p>
               </div>
             </div>
 
-            <div className="bg-card/80 backdrop-blur-sm p-8 rounded-xl border border-border">
-              <h3 className="text-2xl font-semibold mb-4">Key Features</h3>
+            <div className="glass-panel p-8 rounded-xl border border-white/10">
+              <h3 className="text-2xl font-semibold mb-4 text-white">Key Features</h3>
               <ul className="space-y-3">
-                <li className="flex items-center text-muted-foreground">
+                <li className="flex items-center text-slate-400">
                   <span className="w-2 h-2 bg-purple-400 rounded-full mr-3" />
                   Real-time notifications and updates
                 </li>
-                <li className="flex items-center text-muted-foreground">
+                <li className="flex items-center text-slate-400">
                   <span className="w-2 h-2 bg-purple-400 rounded-full mr-3" />
                   Secure authentication and data protection
                 </li>
-                <li className="flex items-center text-muted-foreground">
+                <li className="flex items-center text-slate-400">
                   <span className="w-2 h-2 bg-purple-400 rounded-full mr-3" />
                   Offline access to essential features
                 </li>
-                <li className="flex items-center text-muted-foreground">
+                <li className="flex items-center text-slate-400">
                   <span className="w-2 h-2 bg-purple-400 rounded-full mr-3" />
                   Seamless integration with web platform
                 </li>

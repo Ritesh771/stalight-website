@@ -2,7 +2,8 @@
 import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
-import './scroll-animations.js'
+import './theme-enhancements'
+// scroll-animations.js intentionally left disabled for performance
 
 createRoot(document.getElementById("root")!).render(<App />);
 

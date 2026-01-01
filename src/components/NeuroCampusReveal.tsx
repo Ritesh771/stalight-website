@@ -115,7 +115,7 @@ const NeuroCampusReveal: React.FC = () => {
   }, [activeIndex]);
 
   return (
-    <section id="neuro-campus" className="py-24 relative overflow-hidden bg-gradient-to-b from-black to-stalight-dark">
+    <section id="neuro-campus" className="py-24 relative overflow-hidden bg-[#030304]">
       {/* Aurora Background */}
       <div className="absolute inset-0 z-0 opacity-40">
         <div className="aurora-bg w-full h-full"></div>
@@ -128,10 +128,10 @@ const NeuroCampusReveal: React.FC = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins text-gradient-primary">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins title-gradient">
             Introducing NEURO CAMPUS
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-slate-400">
             The future of education technology, powered by AI and blockchain
           </p>
         </div>
@@ -146,10 +146,10 @@ const NeuroCampusReveal: React.FC = () => {
                 <div className="flex flex-col md:flex-row gap-10 items-center justify-center h-full">
                   <div className="w-full md:w-1/2">
                     <GlassmorphicCard className="card-spotlight p-8 h-full">
-                      <h3 className="text-2xl font-bold mb-4 text-gradient-primary">
+                      <h3 className="text-2xl font-bold mb-4 title-gradient">
                         {feature.title}
                       </h3>
-                      <p className="text-lg text-muted-foreground">
+                      <p className="text-lg text-slate-400">
                         {feature.description}
                       </p>
                       <div className="mt-6">

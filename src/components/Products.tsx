@@ -5,56 +5,56 @@ const Products: React.FC = () => {
   return (
     <section id="products" className="py-12 sm:py-16 lg:py-20 relative overflow-hidden">
       {/* Section Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/85 to-background/70"></div>
-      <div className="absolute inset-0 bg-gradient-to-r from-purple-950/10 via-transparent to-blue-950/10"></div>
+      <div className="absolute inset-0 bg-[#030304]"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-indigo-950/10 via-transparent to-purple-950/10"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8 lg:mb-12">
            
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 lg:mb-4 font-bungee bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-500 to-accent">
-              Our Products
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 lg:mb-4 text-white">
+              Our <span className="title-gradient">Products</span>
             </h2>
-            <p className="text-lg sm:text-xl text-foreground/80 max-w-2xl mx-auto px-4 font-inter">
+            <p className="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto px-4">
               Innovative solutions designed to transform education, safety, and development workflows
             </p>
           </div>
 
           {/* Flagship Product */}
-          <div className="glass-card p-4 sm:p-6 lg:p-8 rounded-xl mb-8 lg:mb-12 relative">
+          <div className="glass-panel p-4 sm:p-6 lg:p-8 rounded-xl mb-8 lg:mb-12 relative">
             <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 items-stretch lg:items-center">
               <div className="flex-1 flex flex-col justify-center">
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mb-4">
-                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gradient-primary">NEURO CAMPUS™</h3>
-                  <span className="px-2 sm:px-3 py-1 text-xs sm:text-sm bg-primary/20 text-primary rounded-full self-start">Flagship Product</span>
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">NEURO CAMPUS™</h3>
+                  <span className="px-2 sm:px-3 py-1 text-xs sm:text-sm bg-indigo-500/20 text-indigo-300 rounded-full self-start">Flagship Product</span>
                 </div>
-                <p className="text-foreground/80 mb-4 lg:mb-6 text-sm sm:text-base">
+                <p className="text-slate-400 mb-4 lg:mb-6 text-sm sm:text-base">
                   A next-generation academic platform designed to streamline campus operations while integrating cutting-edge AI, blockchain, and automation features.
                 </p>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                  <div className="glass-card p-4 rounded-lg hover:scale-105 transition-transform">
+                  <div className="glass-card p-4 rounded-lg transition-transform">
                     <div className="flex items-center gap-2 mb-2">
                       <Bot className="w-5 h-5 text-primary" />
                       <h4 className="font-semibold">NEURA Chatbot</h4>
                     </div>
                     <p className="text-sm text-foreground/70">AI assistant for instant PDF summaries and Q&A using LLMs</p>
                   </div>
-                  <div className="glass-card p-4 rounded-lg hover:scale-105 transition-transform">
+                  <div className="glass-card p-4 rounded-lg transition-transform">
                     <div className="flex items-center gap-2 mb-2">
                       <Brain className="w-5 h-5 text-primary" />
                       <h4 className="font-semibold">NebulaSuggests AI</h4>
                     </div>
                     <p className="text-sm text-foreground/70">Smart recommendation engine for personalized DSA problems</p>
                   </div>
-                  <div className="glass-card p-4 rounded-lg hover:scale-105 transition-transform">
+                  <div className="glass-card p-4 rounded-lg transition-transform">
                     <div className="flex items-center gap-2 mb-2">
                       <BookOpen className="w-5 h-5 text-primary" />
                       <h4 className="font-semibold">AI Rank Prediction</h4>
                     </div>
                     <p className="text-sm text-foreground/70">Predicts student rankings and flags performance issues</p>
                   </div>
-                  <div className="glass-card p-4 rounded-lg hover:scale-105 transition-transform">
+                  <div className="glass-card p-4 rounded-lg transition-transform">
                     <div className="flex items-center gap-2 mb-2">
                       <Shield className="w-5 h-5 text-primary" />
                       <h4 className="font-semibold">Blockchain Validation</h4>
@@ -64,14 +64,14 @@ const Products: React.FC = () => {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                  <div className="glass-card p-4 rounded-lg hover:scale-105 transition-transform">
+                  <div className="glass-card p-4 rounded-lg transition-transform">
                     <div className="flex items-center gap-2 mb-2">
                       <Users className="w-5 h-5 text-primary" />
                       <h4 className="font-semibold">Role-Based Dashboards</h4>
                     </div>
                     <p className="text-sm text-foreground/70">Web + Native App dashboards for admin, faculty, and students</p>
                   </div>
-                  <div className="glass-card p-4 rounded-lg hover:scale-105 transition-transform">
+                  <div className="glass-card p-4 rounded-lg transition-transform">
                     <div className="flex items-center gap-2 mb-2">
                       <Camera className="w-5 h-5 text-primary" />
                       <h4 className="font-semibold">Face Recognition</h4>
@@ -100,7 +100,7 @@ const Products: React.FC = () => {
                     className="w-full max-w-lg opacity-90 hover:opacity-100 transition-opacity duration-300 mb-6"
                   />
                 </div>
-                <div className="aspect-video rounded-lg overflow-hidden glass-card hover:scale-105 transition-transform w-full max-w-md">
+                <div className="aspect-video rounded-lg overflow-hidden glass-card transition-transform w-full max-w-md">
                   <img 
                     src="/images/neuro-campus-dashboard.png" 
                     alt="Neuro Campus Dashboard" 
@@ -115,7 +115,7 @@ const Products: React.FC = () => {
                   href="https://neurocampus.netlify.app"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-3 inline-block px-5 py-2 rounded-lg bg-gradient-to-r from-primary to-accent text-white font-semibold shadow-lg hover:scale-105 hover:from-accent hover:to-primary transition-all duration-300"
+                  className="mt-3 inline-block px-5 py-2 rounded-lg bg-gradient-to-r from-primary to-accent text-white font-semibold shadow-lg hover:from-accent hover:to-primary transition-all duration-300"
                 >
                   Access the demo
                 </a>
@@ -126,7 +126,7 @@ const Products: React.FC = () => {
           {/* Upcoming Products */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* SafeSpace™ */}
-            <div className="glass-card p-6 rounded-xl hover:scale-105 transition-transform">
+            <div className="glass-card p-6 rounded-xl transition-transform">
               <div className="flex items-center gap-2 mb-4">
                 <AlertTriangle className="w-6 h-6 text-accent" />
                 <div>
@@ -185,7 +185,7 @@ const Products: React.FC = () => {
             </div>
 
             {/* GitSolveAI */}
-            <div className="glass-card p-6 rounded-xl hover:scale-105 transition-transform">
+            <div className="glass-card p-6 rounded-xl transition-transform">
               <div className="flex items-center gap-2 mb-4">
                 <GitBranch className="w-6 h-6 text-purple-400" />
                 <div>
@@ -244,7 +244,7 @@ const Products: React.FC = () => {
             </div>
 
             {/* AI CCTV Surveillance */}
-            <div className="glass-card p-6 rounded-xl hover:scale-105 transition-transform">
+            <div className="glass-card p-6 rounded-xl transition-transform">
               <div className="flex items-center gap-2 mb-4">
                 <Camera className="w-6 h-6 text-primary" />
                 <div>
@@ -303,7 +303,7 @@ const Products: React.FC = () => {
             </div>
 
               {/* Chat2DB */}
-              <div className="glass-card p-6 rounded-xl hover:scale-105 transition-transform">
+              <div className="glass-card p-6 rounded-xl transition-transform">
                 <div className="flex items-center gap-2 mb-4">
                   
                   <div>
@@ -362,7 +362,7 @@ const Products: React.FC = () => {
               </div>
 
             {/* AR-Based Remote Technical Support */}
-            <div className="glass-card p-6 rounded-xl hover:scale-105 transition-transform">
+            <div className="glass-card p-6 rounded-xl transition-transform">
               <div className="flex items-center gap-2 mb-4">
                
                 <div>
@@ -434,7 +434,7 @@ const Products: React.FC = () => {
             </div>
 
             {/* AI Lawyer for Everyday Legal Issues */}
-            <div className="glass-card p-6 rounded-xl hover:scale-105 transition-transform flex flex-col justify-between">
+            <div className="glass-card p-6 rounded-xl transition-transform flex flex-col justify-between">
               <div>
                 <div className="flex items-center gap-2 mb-4">
                   <Shield className="w-6 h-6 text-purple-500" />

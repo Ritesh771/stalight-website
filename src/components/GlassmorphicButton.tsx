@@ -18,7 +18,7 @@ const GlassmorphicButton: React.FC<GlassmorphicButtonProps> = ({
   fullWidth = false,
   ...props
 }) => {
-  const baseStyle = "transition-all duration-300 transform hover:scale-105 backdrop-blur-md";
+  const baseStyle = "transition-all duration-300 backdrop-blur-md";
   
   const variantStyles = {
     default: "bg-stalight-primary hover:bg-stalight-primary text-foreground hover:shadow-[0_0_15px_rgba(155,135,245,0.5)]",
