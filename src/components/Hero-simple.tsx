@@ -64,68 +64,70 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Column - Glass Mockup */}
+          {/* Right Column - AI Technology Card */}
           <div className="lg:col-span-6 relative flex items-center justify-center">
-            <div className="glass-panel rounded-2xl p-4 w-full max-w-2xl shadow-strong">
-              <div className="bg-[#0A0A0C] rounded-lg overflow-hidden border border-white/5 h-[380px] flex">
-                {/* Sidebar mock */}
-                <div className="w-14 md:w-56 border-r border-white/5 flex flex-col p-4 bg-[#050507]">
-                  <div className="h-3 w-20 bg-white/10 rounded mb-6" />
-                  <div className="space-y-3">
-                    <div className="h-8 w-full bg-primary/20 rounded flex items-center px-3 text-xs text-primary">Dashboard</div>
-                    <div className="h-8 w-full rounded flex items-center px-3 opacity-60 text-xs">Security</div>
-                    <div className="h-8 w-full rounded flex items-center px-3 opacity-60 text-xs">Automation</div>
-                    <div className="h-8 w-full rounded flex items-center px-3 opacity-60 text-xs">Analytics</div>
-                  </div>
+            <div className="w-full max-w-2xl relative flex items-center justify-center">
+              {/* Floating decorative elements */}
+              <div className="absolute inset-0">
+                {/* Top-left floating element */}
+                <div className="absolute top-8 left-8 w-16 h-16 rounded-full bg-gradient-to-br from-primary/20 to-blue-500/20 backdrop-blur-sm border border-primary/30 flex items-center justify-center animate-float">
+                  <div className="w-8 h-8 rounded-full bg-primary/40 animate-pulse"></div>
                 </div>
 
-                {/* Main mock content */}
-                <div className="flex-1 p-5 md:p-6 relative">
-                  <div className="flex justify-between items-center mb-4">
-                    <div className="h-3 w-32 bg-white/5 rounded" />
-                    <div className="h-8 w-24 bg-emerald-600/20 rounded-full flex items-center justify-center text-[11px] text-emerald-300">Online</div>
-                  </div>
+                {/* Top-right floating element */}
+                <div className="absolute top-12 right-12 w-12 h-12 rounded-lg bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm border border-purple-500/30 flex items-center justify-center animate-float-delayed">
+                  <div className="w-6 h-6 rounded bg-purple-400/60"></div>
+                </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                    <div className="glass-panel rounded-lg p-4">
-                      <div className="text-xs text-white font-medium mb-2">AI Analysis</div>
-                      <div className="text-sm text-slate-300">Campus security optimized by 34%</div>
-                      <div className="mt-2 h-2 bg-white/10 rounded-full overflow-hidden">
-                        <div className="h-full w-[34%] bg-emerald-500 rounded-full"></div>
-                      </div>
-                    </div>
-                    <div className="glass-panel rounded-lg p-4">
-                      <div className="text-xs text-white font-medium mb-2">Active Systems</div>
-                      <div className="text-2xl font-semibold text-white">12</div>
-                      <div className="text-xs text-slate-400">+3 this week</div>
-                    </div>
-                  </div>
+                {/* Bottom-left floating element */}
+                <div className="absolute bottom-16 left-16 w-14 h-14 rounded-full bg-gradient-to-br from-blue-500/20 to-cyan-500/20 backdrop-blur-sm border border-blue-500/30 flex items-center justify-center animate-float-slow">
+                  <div className="w-7 h-7 rounded-full bg-blue-400/50 animate-pulse" style={{animationDelay: '1s'}}></div>
+                </div>
 
-                  <div className="space-y-3">
-                    <div className="flex items-center justify-between bg-[#121214] p-3 rounded">
-                      <div className="flex items-center gap-3">
-                        <div className="w-3 h-3 rounded-full bg-emerald-500" />
-                        <div className="text-sm text-slate-300">NeuroCampus AI Active</div>
-                      </div>
-                      <div className="text-[11px] px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400">Running</div>
-                    </div>
+                {/* Bottom-right floating element */}
+                <div className="absolute bottom-12 right-8 w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-500/20 to-purple-500/20 backdrop-blur-sm border border-indigo-500/30 flex items-center justify-center animate-float">
+                  <div className="w-5 h-5 rounded bg-indigo-400/60"></div>
+                </div>
 
-                    <div className="flex items-center justify-between bg-[#121214] p-3 rounded">
-                      <div className="flex items-center gap-3">
-                        <div className="w-3 h-3 rounded-full bg-blue-500" />
-                        <div className="text-sm text-slate-300">Safety Monitoring</div>
-                      </div>
-                      <div className="text-[11px] px-2 py-0.5 rounded bg-blue-500/10 text-blue-400">Active</div>
-                    </div>
+                {/* Center-left floating element */}
+                <div className="absolute top-1/2 left-4 transform -translate-y-1/2 w-8 h-8 rounded-full bg-gradient-to-br from-primary/15 to-fuchsia-500/15 backdrop-blur-sm border border-primary/20 flex items-center justify-center animate-float-delayed">
+                  <div className="w-4 h-4 rounded-full bg-primary/30 animate-ping" style={{animationDelay: '0.5s'}}></div>
+                </div>
 
-                    <div className="flex items-center justify-between bg-[#121214] p-3 rounded">
-                      <div className="flex items-center gap-3">
-                        <div className="w-3 h-3 rounded-full bg-purple-500" />
-                        <div className="text-sm text-slate-300">Automation Tasks</div>
-                      </div>
-                      <div className="text-[11px] px-2 py-0.5 rounded bg-purple-500/10 text-purple-400">Processing</div>
-                    </div>
-                  </div>
+                {/* Center-right floating element */}
+                <div className="absolute top-1/2 right-4 transform -translate-y-1/2 w-11 h-11 rounded-lg bg-gradient-to-br from-cyan-500/20 to-blue-500/20 backdrop-blur-sm border border-cyan-500/30 flex items-center justify-center animate-float-slow">
+                  <div className="w-5.5 h-5.5 rounded bg-cyan-400/50"></div>
+                </div>
+              </div>
+
+              {/* Concentric circular borders with gradients */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                {/* Outer blur circle */}
+                <div className="w-80 h-80 sm:w-96 sm:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full bg-gradient-to-br from-primary/25 via-fuchsia-500/25 to-transparent blur-2xl opacity-70"></div>
+
+                {/* Animated pulse border */}
+                <div className="absolute w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full border border-primary/30 animate-pulse"></div>
+
+                {/* Additional inner borders */}
+                <div className="absolute w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full border border-primary/20 opacity-60"></div>
+                <div className="absolute w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full border border-primary/15 opacity-40"></div>
+              </div>
+
+              {/* Main AI Card */}
+              <div className="relative w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-2xl bg-background/60 backdrop-blur-xl border border-primary/30 shadow-xl shadow-primary/10 flex flex-col items-center justify-center gap-2 sm:gap-3 text-center p-4 sm:p-6">
+                <div className="text-[10px] sm:text-[11px] uppercase tracking-wider text-primary/80 font-medium">Stalight Technology</div>
+                <p className="text-base sm:text-lg lg:text-xl font-semibold text-foreground drop-shadow">
+                  Intelligent Solutions
+                </p>
+                <p className="text-[9px] sm:text-[10px] lg:text-xs text-muted-foreground leading-snug max-w-[8rem] sm:max-w-[10rem]">
+                  AI • ML • Analytics • Innovation
+                </p>
+                <div className="mt-1 grid grid-cols-2 gap-1 sm:gap-2 w-full">
+                  {['AI','ML','Analytics','Automation'].map(label => (
+                    <span key={label} className="text-[8px] sm:text-[9px] lg:text-[10px] px-1 sm:px-2 py-1 rounded-md bg-primary/10 border border-primary/20 text-primary font-medium tracking-wide">
+                      {label}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>

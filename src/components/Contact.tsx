@@ -58,38 +58,31 @@ const Contact: React.FC = () => {
                 href="https://riteshn.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative glass-panel p-8 rounded-xl border border-white/10 hover:border-primary/50 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(155,135,245,0.4)] overflow-hidden"
+                className="relative glass-panel p-8 rounded-xl border border-white/10 overflow-hidden"
               >
-                {/* Animated background gradient */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-purple-500/5 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-                {/* Floating particles effect */}
-                <div className="absolute top-4 right-4 w-3 h-3 bg-primary/60 rounded-full animate-pulse"></div>
-                <div className="absolute bottom-6 left-6 w-2 h-2 bg-purple-400/60 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-                <div className="absolute top-1/2 right-8 w-1.5 h-1.5 bg-blue-400/60 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
-
                 <div className="relative z-10 text-center">
-                  {/* Profile Avatar Placeholder */}
-                  <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary to-purple-500 flex items-center justify-center text-white text-2xl font-bold">
-                    R
+                  {/* Profile Avatar */}
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-primary/50">
+                    <img 
+                      src="/ceo.jpg" 
+                      alt="Ritesh N - CEO"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
 
-                  <div className="text-sm text-primary font-semibold mb-2">Lead Developer</div>
-                  <div className="text-xl font-bold text-white mb-3 group-hover:title-gradient transition-all duration-300">Ritesh N</div>
+                  <div className="text-sm text-primary font-semibold mb-2">CEO & Lead Developer</div>
+                  <div className="text-xl font-bold text-white mb-3">Ritesh N</div>
 
                   <p className="text-slate-400 text-sm mb-4 leading-relaxed">
                     Passionate full-stack developer with expertise in React, Node.js, and AI technologies.
-                    Leading the development of innovative educational solutions at Stalight Technology.
+                    Leading the development of innovative solutions at Stalight Technology.
                   </p>
 
                   <div className="flex items-center justify-center gap-2 text-primary text-sm font-medium">
                     <span>View Portfolio</span>
-                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+                    <ExternalLink className="h-4 w-4" />
                   </div>
                 </div>
-
-                {/* Hover glow effect */}
-                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-primary/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
               </a>
 
               {/* Co-Lead Developer Card */}
@@ -97,24 +90,20 @@ const Contact: React.FC = () => {
                 href="https://pannagaja.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative glass-panel p-8 rounded-xl border border-white/10 hover:border-accent/50 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(236,72,153,0.4)] overflow-hidden"
+                className="relative glass-panel p-8 rounded-xl border border-white/10 overflow-hidden"
               >
-                {/* Animated background gradient */}
-                <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-pink-500/5 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-                {/* Floating particles effect */}
-                <div className="absolute top-6 left-4 w-2 h-2 bg-accent/60 rounded-full animate-pulse"></div>
-                <div className="absolute bottom-4 right-6 w-3 h-3 bg-pink-400/60 rounded-full animate-pulse" style={{ animationDelay: '0.7s' }}></div>
-                <div className="absolute top-1/3 left-8 w-1.5 h-1.5 bg-purple-400/60 rounded-full animate-pulse" style={{ animationDelay: '1.2s' }}></div>
-
                 <div className="relative z-10 text-center">
-                  {/* Profile Avatar Placeholder */}
-                  <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-accent to-pink-500 flex items-center justify-center text-white text-2xl font-bold">
-                    P
+                  {/* Profile Avatar */}
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-accent/50">
+                    <img 
+                      src="/cto.jpg" 
+                      alt="Pannaga J - CTO"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
 
-                  <div className="text-sm text-accent font-semibold mb-2">Co-Lead Developer</div>
-                  <div className="text-xl font-bold text-white mb-3 group-hover:title-gradient transition-all duration-300">Pannaga J</div>
+                  <div className="text-sm text-accent font-semibold mb-2">CTO & Co-Lead Developer</div>
+                  <div className="text-xl font-bold text-white mb-3">Pannaga J</div>
 
                   <p className="text-slate-400 text-sm mb-4 leading-relaxed">
                     Creative frontend specialist and UI/UX enthusiast. Expert in modern web technologies
@@ -123,12 +112,9 @@ const Contact: React.FC = () => {
 
                   <div className="flex items-center justify-center gap-2 text-accent text-sm font-medium">
                     <span>View Portfolio</span>
-                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+                    <ExternalLink className="h-4 w-4" />
                   </div>
                 </div>
-
-                {/* Hover glow effect */}
-                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-accent/20 to-pink-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
               </a>
             </div>
           </div>
