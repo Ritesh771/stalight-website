@@ -25,33 +25,8 @@ const CanvasRevealCard: React.FC<CanvasRevealCardProps> = ({
   const cardRef = useRef<HTMLDivElement>(null);
   
   useEffect(() => {
-    // Throttle intersection observer for better performance
-    let timeoutId: NodeJS.Timeout;
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          // Delay setting visible to prevent rapid firing
-          timeoutId = setTimeout(() => {
-            setIsVisible(true);
-          }, 50);
-        }
-      });
-    }, { 
-      threshold: 0.1,
-      rootMargin: '50px' // Trigger earlier
-    });
-    
-    if (cardRef.current) {
-      observer.observe(cardRef.current);
-    }
-    
-    return () => {
-      clearTimeout(timeoutId);
-      if (cardRef.current) {
-        observer.unobserve(cardRef.current);
-      }
-    };
+    // Removed intersection observer for instant loading and better performance
+    setIsVisible(true);
   }, []);
   
   const handleMouseMove = (e: React.MouseEvent) => {

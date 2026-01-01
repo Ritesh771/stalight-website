@@ -9,7 +9,7 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import DownloadApp from '@/components/DownloadApp';
 // import FloatingDock from '@/components/FloatingDock'; // Removed for cleaner design
-import GrowvoAd from '@/components/GrowvoAd';
+// import GrowvoAd from '@/components/GrowvoAd'; // Temporarily disabled due to React hook issues
 // import ScrollManager from '@/utils/scrollManager'; // Disabled for better performance
 
 const Index: React.FC = () => {
@@ -53,7 +53,7 @@ const Index: React.FC = () => {
         <Footer />
       </div>
       {/* <FloatingDock /> */} {/* Removed for cleaner design */}
-      <GrowvoAd />
+      {/* <GrowvoAd /> */} {/* Temporarily disabled due to React hook issues */}
     </div>
   );
 };

@@ -30,18 +30,7 @@ const demoImages = [
 ];
 
 const DashboardShowcase: React.FC = () => {
-  const typewriterTexts = [
-    "Our Application Showcase",
-    "Powerful Dashboard Solutions",
-    "Interactive User Interfaces"
-  ];
-  
-  const { text, showCursor } = useTypewriter(typewriterTexts, {
-    speed: 1.5,
-    eraseSpeed: 25,
-  // Removed delays for instant loading
-    pauseBetween: 800
-  });
+  const displayText = "Our Application Showcase";
 
   return (
     <section id="dashboard-showcase" className="py-12 sm:py-16 lg:py-20 relative overflow-hidden">

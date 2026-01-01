@@ -71,55 +71,14 @@ const NeuroCampusReveal: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (!containerRef.current) return;
-      
-      const rect = containerRef.current.getBoundingClientRect();
-      const scrollPercentage = 1 - Math.max(0, Math.min(1, rect.bottom / (rect.height + window.innerHeight)));
-      const newIndex = Math.min(features.length - 1, Math.floor(scrollPercentage * features.length));
-      
-      if (newIndex !== activeIndex) {
-        setActiveIndex(newIndex);
-      }
-      
-      if (containerRef.current) {
-        const rotateX = scrollPercentage * 20 - 10;
-        const rotateY = scrollPercentage * 20 - 10;
-        containerRef.current.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-      }
-    };
-
-    observer.current = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            window.addEventListener('scroll', handleScroll);
-          } else {
-            window.removeEventListener('scroll', handleScroll);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    if (containerRef.current) {
-      observer.current.observe(containerRef.current);
-    }
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      if (observer.current && containerRef.current) {
-        observer.current.unobserve(containerRef.current);
-      }
-    };
-  }, [activeIndex]);
+    // Removed scroll-based feature switching for better performance
+    // Features are now displayed statically
+  }, []);
 
   return (
     <section id="neuro-campus" className="py-24 relative overflow-hidden bg-[#030304]">
-      {/* Aurora Background */}
-      <div className="absolute inset-0 z-0 opacity-40">
-        <div className="aurora-bg w-full h-full"></div>
-      </div>
+      {/* Simple background - removed aurora for better performance */}
+      <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/20 to-purple-900/20"></div>
       
       {/* Gemini-style SVG effect */}
       <div className="absolute inset-0 z-0 opacity-70 pointer-events-none">
@@ -136,65 +95,31 @@ const NeuroCampusReveal: React.FC = () => {
           </p>
         </div>
         
-        <div className="container-3d-scroll min-h-[80vh]">
-          <div ref={containerRef} className="scroll-rotator w-full h-full py-10">
-            {features.map((feature, index) => (
-              <div 
-                key={index}
-                className={`scroll-content ${activeIndex === index ? 'active' : ''}`}
-              >
-                <div className="flex flex-col md:flex-row gap-10 items-center justify-center h-full">
-                  <div className="w-full md:w-1/2">
-                    <GlassmorphicCard className="card-spotlight p-8 h-full">
-                      <h3 className="text-2xl font-bold mb-4 title-gradient">
-                        {feature.title}
-                      </h3>
-                      <p className="text-lg text-slate-400">
-                        {feature.description}
-                      </p>
-                      <div className="mt-6">
-                        <button className="text-stalight-primary flex items-center text-lg transition-all hover:translate-x-2">
-                          Learn more <ArrowRight className="ml-2 h-5 w-5" />
-                        </button>
-                      </div>
-                    </GlassmorphicCard>
-                  </div>
-                  <div className="w-full md:w-1/2 flex justify-center">
-                    <div className="canvas-reveal rounded-2xl overflow-hidden w-full max-w-md aspect-[4/3] card-spotlight">
-                      <img 
-                        src={`/lovable-uploads/photo-1461749280684-dccba630e2f6.avif`} 
-                        alt={feature.title}
-                        className="w-full h-full object-cover" 
-                        onError={(e) => {
-                          e.currentTarget.src = `/lovable-uploads/e67c8bb8-4937-4d34-88a3-4057ffe0cf00.png`;
-                        }}
-                      />
-                      <div className="canvas-dots absolute inset-0 opacity-0"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-            
-            <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex space-x-3">
-              {features.map((_, index) => (
-                <button
-                  key={index}
-                  className={`w-3 h-3 rounded-full transition-all ${
-                    activeIndex === index ? 'bg-stalight-primary w-12' : 'bg-white/30'
-                  }`}
-                  onClick={() => {
-                    setActiveIndex(index);
-                    const scrollAmount = index * (containerRef.current?.clientHeight || 0) / features.length;
-                    window.scrollTo({
-                      top: (containerRef.current?.offsetTop || 0) + scrollAmount,
-                      behavior: 'smooth'
-                    });
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {features.map((feature, index) => (
+            <GlassmorphicCard key={index} className="card-spotlight p-6 h-full">
+              <div className="canvas-reveal rounded-xl overflow-hidden mb-4 aspect-[4/3] card-spotlight">
+                <img 
+                  src={`/lovable-uploads/photo-1461749280684-dccba630e2f6.avif`} 
+                  alt={feature.title}
+                  className="w-full h-full object-cover" 
+                  onError={(e) => {
+                    e.currentTarget.src = `/lovable-uploads/e67c8bb8-4937-4d34-88a3-4057ffe0cf00.png`;
                   }}
                 />
-              ))}
-            </div>
-          </div>
+                <div className="canvas-dots absolute inset-0 opacity-0"></div>
+              </div>
+              <h3 className="text-xl font-bold mb-3 title-gradient">
+                {feature.title}
+              </h3>
+              <p className="text-slate-400 mb-4">
+                {feature.description}
+              </p>
+              <button className="text-stalight-primary flex items-center text-sm transition-all hover:translate-x-2">
+                Learn more <ArrowRight className="ml-2 h-4 w-4" />
+              </button>
+            </GlassmorphicCard>
+          ))}
         </div>
       </div>
     </section>

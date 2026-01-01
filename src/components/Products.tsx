@@ -93,29 +93,23 @@ const Products: React.FC = () => {
                 </button>
               </div>
               <div className="flex-1 flex flex-col items-center justify-center w-full lg:w-auto">
-                <div className="relative">
-                  <img 
-                    src="/svg/undraw_dashboard_p93p.svg"
-                    alt="Dashboard Analytics"
-                    className="w-full max-w-lg opacity-90 hover:opacity-100 transition-opacity duration-300 mb-6"
-                  />
-                </div>
                 <div className="aspect-video rounded-lg overflow-hidden glass-card transition-transform w-full max-w-md">
                   <img 
-                    src="/images/neuro-campus-dashboard.png" 
+                    src="/neuro-campus-dashboard.png" 
                     alt="Neuro Campus Dashboard" 
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <span className="mt-4 inline-flex items-center gap-2 px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">
                   <svg xmlns='http://www.w3.org/2000/svg' className='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M7 16V4a1 1 0 011-1h8a1 1 0 011 1v12m-4 4h-4a1 1 0 01-1-1v-1h6v1a1 1 0 01-1 1z' /></svg>
-                  Available on Web & Mobile
+                  Dashboard Analytics
                 </span>
+                <span className="mt-2 text-sm text-slate-400">Neuro Campus Dashboard</span>
                 <a
                   href="https://neurocampus.netlify.app"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-3 inline-block px-5 py-2 rounded-lg bg-gradient-to-r from-primary to-accent text-white font-semibold shadow-lg hover:from-accent hover:to-primary transition-all duration-300"
+                  className="mt-3 inline-block px-5 py-2 rounded-lg bg-gradient-to-r from-purple-500 to-purple-600 text-white font-semibold shadow-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300"
                 >
                   Access the demo
                 </a>

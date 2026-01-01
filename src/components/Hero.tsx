@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronRight } from 'lucide-react';
 import GlassmorphicButton from './GlassmorphicButton';
-import './advanced-animations.css';
+// import './advanced-animations.css'; // Disabled for better performance
 // import ScrollManager from '@/utils/scrollManager'; // Disabled for better performance
 
 const Hero = () => {
