@@ -1,6 +1,6 @@
 /* @import './wave-animations.css'; */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
-/* @import './components/advanced-animations.css'; */
+@import './components/advanced-animations.css';
 
 /* Import Bungee font - commented out as we're using system fonts */
 /*
@@ -397,7 +397,8 @@
 /* Keep default images and content untouched; styling only */
 
 
-/* Floating animations for hero elements */
+/* Disabled animations for better performance */
+/*
 @keyframes float {
   0%, 100% {
     transform: translateY(0) translateZ(0);
