@@ -28,13 +28,13 @@ const contactInfo = [
   }
 ];
 
-const Contact: React.FC = () => {
+const Contact = () => {
   return (
     <section id="contact" className="py-12 sm:py-16 lg:py-20 relative overflow-hidden">
       {/* Section Background */}
       <div className="absolute inset-0 bg-[#030304]"></div>
       <div className="absolute inset-0 bg-gradient-to-r from-emerald-950/10 via-transparent to-blue-950/10"></div>
-      
+
       {/* Background accents */}
       <div className="absolute top-1/3 left-0 w-64 h-64 rounded-full bg-indigo-500/10 blur-3xl"></div>
       <div className="absolute bottom-1/4 right-0 w-64 h-64 rounded-full bg-purple-500/10 blur-3xl"></div>
@@ -63,8 +63,8 @@ const Contact: React.FC = () => {
                 <div className="relative z-10 text-center">
                   {/* Profile Avatar */}
                   <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-primary/50">
-                    <img 
-                      src="/ceo.jpg" 
+                    <img
+                      src="/ceo.jpg"
                       alt="Ritesh N - CEO"
                       className="w-full h-full object-cover"
                     />
@@ -95,8 +95,8 @@ const Contact: React.FC = () => {
                 <div className="relative z-10 text-center">
                   {/* Profile Avatar */}
                   <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-accent/50">
-                    <img 
-                      src="/cto.jpg" 
+                    <img
+                      src="/cto.jpg"
                       alt="Pannaga J - CTO"
                       className="w-full h-full object-cover"
                     />
@@ -119,8 +119,32 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
+          {/* Join Our Team Section */}
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 title-gradient">
+              Join Our Team
+            </h2>
+            <p className="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto mb-6">
+              Build amazing solutions together.
+            </p>
+            <p className="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto mb-8">
+              Ready to work on exciting client projects? Join our talented team. We bridge the gap between technology and human needs, creating scalable digital experiences.
+            </p>
+            <p className="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto mb-8">
+              Whether you are a developer, designer, or AI specialist, we offer a collaborative environment to grow your skills and career.
+            </p>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdcSsLnlcixawAi2Hw-LcHL_8lD2KlyAdbj0BNiJKezYDxo8A/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-medium py-3 px-6 rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] text-sm"
+            >
+              Apply Now
+              <ExternalLink className="h-4 w-4" />
+            </a>
+          </div>
+
           <div className="text-center mb-10 lg:mb-12">
-            
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 lg:mb-4 text-white">
               Get In <span className="title-gradient">Touch</span>
             </h2>
@@ -131,7 +155,7 @@ const Contact: React.FC = () => {
 
           {/* Contact Illustration */}
           <div className="flex justify-center mb-12">
-            <img 
+            <img
               src="/svg/undraw_contact-us_kcoa.svg"
               alt="Contact Us"
               className="w-full max-w-md lg:max-w-lg opacity-80"
@@ -147,8 +171,8 @@ const Contact: React.FC = () => {
                 </div>
                 <h4 className="font-semibold text-foreground mb-3 text-lg">{info.label}</h4>
                 {info.link ? (
-                  <a 
-                    href={info.link} 
+                  <a
+                    href={info.link}
                     className="text-muted-foreground text-sm leading-relaxed block"
                     {...(info.link.startsWith('http') ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                   >
